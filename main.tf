@@ -11,6 +11,9 @@ module "sql_database" {
   source              = "./modules/sql_database"
   sql_server_id       = module.sql_server.mssql_server_id
   sql_database_name   = var.sql_database_name
+  sql_server_name = var.sql_server_name
+  admin_username = var.admin_username
+  admin_password = var.admin_password
 }
 
 # module "sql_scripts" {
