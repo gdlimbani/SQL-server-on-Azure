@@ -25,7 +25,7 @@ pipeline {
             steps {
                 script {
                     bat '''
-                    terraform plan -var="admin_password=$SQL_ADMIN_PASSWORD" -out=tfplan 
+                    terraform plan -var="admin_password=$SQL_ADMIN_PASSWORD" -var="subscription_id=$ARM_SUBSCRIPTION_ID" -var="client_id=$ARM_CLIENT_ID" -var="client_secret=$ARM_CLIENT_SECRET" -var="tenant_id=$ARM_TENANT_ID" -out=tfplan 
                     '''
                 }
             }
