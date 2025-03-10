@@ -26,5 +26,4 @@ variable "admin_password" {
   description = "The administrator password for the SQL server"
   type        = string
   sensitive   = true
-  default = "123abc!@#ABC"
 }

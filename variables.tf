@@ -2,25 +2,21 @@
 variable "subscription_id" {
   description = "The Azure subscription ID"
   type        = string
-  default = "95eba7e9-db83-4900-a7a9-695be8543900"
 }
 
 variable "client_id" {
   description = "The Azure client ID"
   type        = string
-  default = "8778c87a-82d8-4950-9cac-36609e466085"
 }
 
 variable "client_secret" {
   description = "The Azure client secret"
   type        = string
-  default = "uiE8Q~b9xzbEIu7fmT7QFB5ynWWK-A1EsnPeuapd"
 }
 
 variable "tenant_id" {
   description = "The Azure tenant ID"
   type        = string
-  default = "3da2b7e8-16b9-4850-a1a1-cebdc35e74a0"
 }
 ##### To connect to the Azure ###############################
 
@@ -58,7 +54,6 @@ variable "admin_password" {
   description = "The administrator password for the SQL server"
   type        = string
   sensitive   = true
-  default = "123abc!@#ABC"
 }
 
 variable "sql_script_path" {
